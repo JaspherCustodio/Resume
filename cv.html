@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume Portfolio</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f3f3f3;
+      padding:40px;
+      color:#333;
+    }
+
+    .container{
+      max-width:1200px;
+      margin:auto;
+      background:white;
+      border-radius:12px;
+      padding:40px;
+      box-shadow:0 0 20px rgba(0,0,0,0.08);
+    }
+
+    .header{
+      text-align:center;
+    }
+
+    .header h1{
+      margin-bottom:10px;
+      font-size:36px;
+    }
+
+    .header p{
+      color:#666;
+      font-size:15px;
+    }
+
+    .section{
+      margin-top:20px;
+    }
+
+    .social-card{
+      border:1px solid #ddd;
+      padding:10px 18px;
+      border-radius:8px;
+      background:#fafafa;
+      font-size:14px;
+      transition:.3s;
+      cursor:pointer;
+    }
+
+    .about{
+      background:#fafafa;
+      padding:25px;
+      border-radius:10px;
+      line-height:1.8;
+      margin-top:30px;
+      border:1px solid #eee;
+    }
+
+    .card{
+    page-break-inside:avoid;
+    padding:15px 25px;
+    border-radius:12px;
+    transition:0.3s ease;
+    }
+
+    .card:hover{
+        transform:translateX(4px);
+        border-left:5px solid #8b0000;
+        background:#fafafa;
+    }
+
+    .card-header{
+        display:grid;
+        grid-template-columns: 1fr auto;
+        gap:15px;
+        align-items:start;
+        margin-bottom:5px;
+    }
+
+    .card-header h4{
+        line-height:1.4;
+        word-break:break-word;
+    }
+
+    .date{
+        white-space:nowrap;
+        text-align:right;
+        font-weight:bold;
+    }
+
+    .company{
+      margin-bottom:15px;
+    }
+
+    ul{
+      padding-left:20px;
+      line-height:1.8;
+    }
+
+    li{
+      margin-bottom:8px;
+    }
+
+    .sidebar-buttons{
+      position:fixed;
+      left:20px;
+      top:30px;
+      display:flex;
+      flex-direction:column;
+      gap:15px;
+    }
+
+    .side-btn{
+      background:white;
+      border:none;
+      padding:15px 18px;
+      border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      cursor:pointer;
+      font-weight:bold;
+      transition:.3s;
+      color:#8b0000;
+    }
+
+
+    @media(max-width:768px){
+
+        body{
+            padding:20px;
+        }
+
+        .container{
+            padding:25px;
+        }
+
+        .card-header{
+            flex-direction:column;
+            align-items:flex-start;
+            gap:10px;
+        }
+
+        .section-title{
+            font-size:24px;
+        }
+
+        .header h1{
+            font-size:28px;
+        }
+
+        .sidebar-buttons{
+            display:none;
+        }
+    }
+
+    @media print {
+        body{
+            padding:0;
+            background:white;
+        }
+
+        .container{
+            box-shadow:none;
+            padding:20px;
+            max-width:100%;
+        }
+
+        .header h1{
+            font-size:24px;
+        }
+
+        .header p{
+            font-size:11px;
+        }
+
+        .section-title{
+            font-size:18px;
+        }
+
+        .card{
+            padding:0px 18px;
+        }
+
+        .card h4{
+            font-size:14px;
+        }
+
+        .company,
+        li,
+        .date{
+            font-size:12px;
+        }
+
+        .sidebar-buttons{
+            display:none;
+        }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar-buttons">
+    <button class="side-btn" onclick="window.print()">
+        Save PDF
+    </button>
+  </div>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>JASPHER DV. CUSTODIO</h1>
+      <p>P.L. Tongohan Sr. Ave. St., Brgy. Kat-Bayani Tanay, Rizal | +63 931-794-5345 | 27jasphercustodio@gmail.com</p>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">TRAININGS ATTENDED</h2>
+
+      <div class="card">
+
+        <div class="card-header">
+          <h4>On-the-Job Training Office of the Management Information Systems</h4>
+          <div class="date">November 2025</div>
+        </div>
+
+        <div class="company">Municipality of Tanay</div>
+
+        <ul>
+          <li>Gained hands-on experience in IT support, networking, system maintenance and troubleshooting for hardware and software issues, including computers, printers, and network connectivity in a government environment.</li>
+          <li>Worked closely with government staff to provide technical assistance and resolve IT-related issues in a timely manner.</li>
+        </ul>
+
+      </div>
+
+      <div class="card">
+
+        <div class="card-header">
+          <h4>NCII in Electrical Installation and Maintenance</h4>
+          <div class="date">June 2021</div>
+        </div>
+
+        <div class="company">Nava Institute of Science and Technology Education</div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="card-header">
+          <h4>On-the-Job Training Office of the Commission on Audit</h4>
+          <div class="date">March 2020</div>
+        </div>
+
+        <div class="company">Municipality of Tanay</div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="card-header">
+          <h4>Computer Fundamentals with Business Application Software, Photoshop, Basic Design and Intro to Internet</h4>
+          <div class="date">July 2017</div>
+        </div>
+
+        <div class="company">PhilTech and Jaken Computer Learning Services</div>
+
+        <ul>
+          <li>Learned essential business application software skills(e.g., Microsoft Office Suite).</li>
+          <li>Developed basic design skills using Photoshop.</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">PROJECTS</h2>
+
+      <div class="card">
+
+        <div class="card-header">
+          <h4>OverthinkNoMore</h4>
+        </div>
+
+        <ul>
+          <li>Developed a mobile application focused on supporting mental health and well-being.</li>
+          <li>Implemented core features such as mood tracking, mindfulness exercises, and resource sharing. Integrated AI chatbot functionality for personalized support.</li>
+          <li>Built using Kotlin in Android Studio.</li>
+        </ul>
+
+      </div>
+
+      <div class="card">
+
+        <div class="card-header">
+          <h4>DPA Data Management System</h4>
+        </div>
+
+        <ul>
+          <li>Developed a web-based data management system for fish farm operations.</li>
+          <li>Built using PHP and MySQL.</li>
+        </ul>
+
+      </div>
+
+      <div class="card">
+
+        <div class="card-header">
+          <h4>DisasterShield</h4>
+        </div>
+
+        <ul>
+          <li>Developed a mobile application designed to provide disaster preparedness information and safety guidance.</li>
+          <li>Built using React Native with Expo. Integrated with Firebase for backend services.</li>
+        </ul>
+
+      </div>
+
+      <div class="card">
+
+        <div class="card-header">
+          <h4>Pomodoro Timer</h4>
+        </div>
+
+        <ul>
+          <li>Developed a web-based Pomodoro Timer using HTML, CSS, and JavaScript.</li>
+          <li>Implemented core features such as timer controls, session management, and user preferences.</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">EDUCATION</h2>
+
+      <div class="card">
+
+        <div class="card-header">
+          <h4>Bachelor of Science in Information Technology</h4>
+          <div class="date">Graduated: July 2026</div>
+        </div>
+
+        <div class="company">East Systems Colleges of Rizal</div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="card-header">
+          <h4>Science, Technology Engineering, and Mathematics</h4>
+          <div class="date">Graduated: March 2020</div>
+        </div>
+
+        <div class="company">Saint John Hill Academy</div>
+
+      </div>
+
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">TECHNICAL SKILLS</h2>
+
+      <div class="card">
+
+        <div class="company">Language: PHP, Python, Django, React Native, Kotlin, Java, JavaScript, SQL, Git</div>
+        <div class="company">Tools and Technologies: Github, VS Code, Firebase, Figma, Expo, Android Studio</div>
+        <div class="company">Others: HTML, CSS, Tailwind</div>
+
+      </div>
+
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">PROFESSIONAL REFERENCES</h2>
+
+      <div class="card">
+
+        <div class="company">Available upon request.</div>
+
+      </div>
+
+    </div>
+
+</body>
+</html>
